@@ -35,6 +35,7 @@ def add_shirts(request):
         s.save()
         return redirect('shirts')
     return render(request,'add_shirts.html',{"form":s})
+#texting git hub
 
 
 
