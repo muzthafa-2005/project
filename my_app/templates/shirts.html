@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">SHIRTS</h2>
+    <TAble style=
+ 
+
+        <TR>
+            <TH>brand</TH>
+            <th>size</th>
+            <th>price</th>
+            <th>rating</th>
+        </TR>
+        {%for i in shirts%}
+
+        <tr>
+            <td>{{i.brand}}</td>
+            <td>{{i.size}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.rating}}</td>
+
+        </tr>
+        {%endfor%}
+    </TAble>
+    
+
+    <button style="
+    background-color:rgb(132, 4, 4);
+    border: 1px solid;
+    padding: 8px 14px;
+    border-radius: 15px;
+    box-shadow:black;
+    font-weight: bold;">  <a style="color: white;" href="{% url 'new item' %}">new item</a></button>
+    
+
+</body>
+</html>
